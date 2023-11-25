@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Проекты\\WebCalcApi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Проекты\\WebCalcApi\\wwwroot\\js\\app.jsx",
+      "PackagePath": "staticwebassets\\js\\app.jsx"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebCalcApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebCalcApi.props",
+      "PackagePath": "build\\WebCalcApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebCalcApi.props",
+      "PackagePath": "buildMultiTargeting\\WebCalcApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebCalcApi.props",
+      "PackagePath": "buildTransitive\\WebCalcApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

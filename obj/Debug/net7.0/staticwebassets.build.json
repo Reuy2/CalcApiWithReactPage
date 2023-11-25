@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "HZrPS6XVFdr+i0YtxXLNdBClWjRsSE/LZkN9vkTdLg4=",
+  "Source": "WebCalcApi",
+  "BasePath": "_content/WebCalcApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebCalcApi\\wwwroot",
+      "Source": "WebCalcApi",
+      "ContentRoot": "D:\\Проекты\\WebCalcApi\\wwwroot\\",
+      "BasePath": "_content/WebCalcApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Проекты\\WebCalcApi\\wwwroot\\index.html",
+      "SourceId": "WebCalcApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Проекты\\WebCalcApi\\wwwroot\\",
+      "BasePath": "_content/WebCalcApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\Проекты\\WebCalcApi\\wwwroot\\js\\app.jsx",
+      "SourceId": "WebCalcApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Проекты\\WebCalcApi\\wwwroot\\",
+      "BasePath": "_content/WebCalcApi",
+      "RelativePath": "js/app.jsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.jsx"
+    }
+  ]
+}
