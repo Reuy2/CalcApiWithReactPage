@@ -11,13 +11,16 @@ namespace WebCalcApi.Evaluations
             str.Trim();
             str = str.Replace(" ", "");
             str = str.Replace(".", ",");
-            int FirstBraceIndex = str.IndexOf('(');
-
-            int LastBraceIndex = str.LastIndexOf(')');
-            if (FirstBraceIndex != -1 && LastBraceIndex != -1)
+            while (str.Contains('('))
             {
-                string expInBrace = str.Substring(FirstBraceIndex + 1, LastBraceIndex - 1 - FirstBraceIndex);
-                str = str.Replace($"({expInBrace})", Eval(expInBrace).ToString());
+                int FirstBraceIndex = str.IndexOf('(');
+                int LastBraceIndex = FindLastBrace(str, FirstBraceIndex);
+
+                if (FirstBraceIndex != -1 && LastBraceIndex != -1)
+                {
+                    string expInBrace = str.Substring(FirstBraceIndex + 1, LastBraceIndex - 1 - FirstBraceIndex);
+                    str = str.Replace($"({expInBrace})", Eval(expInBrace).ToString());
+                }
             }
 
             while (str.Contains('^'))
@@ -72,6 +75,20 @@ namespace WebCalcApi.Evaluations
             }
 
             return float.Parse(str);
+        }
+
+        private static int FindLastBrace(string str, int FirstBraceIndex)
+        {
+            if (FirstBraceIndex == -1) return -1;
+            int openedBrace = 1;
+            int startIndex = FirstBraceIndex+1;
+            while (openedBrace > 0 && startIndex < str.Length)
+            {
+                startIndex++;
+                if (str[startIndex] == '(') openedBrace += 1;
+                if (str[startIndex] == ')') openedBrace -= 1;
+            }
+            return startIndex;
         }
 
         private static float FindRightOperand(int i, string str)
